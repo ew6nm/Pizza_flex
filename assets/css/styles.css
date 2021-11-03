@@ -50,9 +50,11 @@ section{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-
+	
 	padding: 125px 100px;
 }
+
+
 
 @media (max-width: 1000px){
 
@@ -67,6 +69,7 @@ section{
 	section{
 		padding: 80px 30px;
 	}
+	
 
 }
 
@@ -258,6 +261,60 @@ header nav li:last-child{
 	}
 
 }
+
+
+
+
+
+
+/*----------------------
+ 	Products Section
+----------------------*/
+
+.products {
+  display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /*align-items: stretch;*/
+}
+
+.product-card {
+  flex: 0 0 200px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+}
+
+.product-image img {
+  max-width: 100%;
+}
+
+.product-info {
+  margin-top: auto;
+}
+
+/* Выбираем первые два товара */
+.products .product-card:first-child, 
+.products .product-card:nth-child(2) {
+  flex: 2 46%;
+}
+@media (max-width: 1000px){
+
+	.product-card {
+    flex: 1 21%;
+  }
+
+}
+
+
+@media (max-width: 600px){
+
+	.product-card {
+    flex: 1 46%;
+  }
+
+}
+
 
 
 
